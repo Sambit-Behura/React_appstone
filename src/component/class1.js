@@ -3,13 +3,13 @@ export default class Class1 extends Component{
     constructor(props){
         super(props)
         this.state = {
-            name:'Sambit'
+            name:'Girish'
         }
     }
 	render(){
 		return(
 			<div>
-			  <span> Hello {this.state.name} </span>
+			  <span> Hello World {this.state.name} </span>
 			</div>
 		  )
 	}
