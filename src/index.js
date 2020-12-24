@@ -1,4 +1,7 @@
 import React from 'react';
+import Adder from './component/adder'
+import Sub from './component/substraction'
+import Mult from './component/multiplication'
 import Class1 from './component/class1';
 import Test from './component/test';
 import ReactDOM from 'react-dom';
@@ -7,7 +10,10 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     {/* <Class1/> */}
-    <Test/>
+    {/* <Test/> */}
+    <Adder/>
+    <Sub />
+    <Mult />
   </React.StrictMode>,
   document.getElementById('root')
 );

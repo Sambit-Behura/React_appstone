@@ -23,10 +23,14 @@ export default class Class1 extends Component{
 		return(
 			<div>
 				<input type="text" value={this.state.name} onChange={this.handleName}  />
+				<br />
 				{this.state.name}
+				<br />
 				<button type="text" onClick={this.handleClick}>
 					Reset!
 				</button>
+
+				<br />
 			</div>
 		  )
 	}
