@@ -4,8 +4,8 @@ export default class Adder extends React.Component{
         super(props);
 
         this.state= {
-            num1:0,
-            num2:0,
+            num1:'',
+            num2:'',
             sum:0 
 
         }

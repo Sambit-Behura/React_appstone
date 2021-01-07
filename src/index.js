@@ -1,4 +1,5 @@
 import React from 'react';
+import Arrays from './component/arrays'
 import Adder from './component/adder'
 import Sub from './component/substraction'
 import Mult from './component/multiplication'
@@ -6,14 +7,18 @@ import Class1 from './component/class1';
 import Test from './component/test';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+import Calculator from './component/calculator';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Class1/> */}
     {/* <Test/> */}
-    <Adder/>
+    {/* <Adder/>
     <Sub />
-    <Mult />
+    <Mult /> */}
+    {/* <Arrays />  */}
+    <Calculator />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
