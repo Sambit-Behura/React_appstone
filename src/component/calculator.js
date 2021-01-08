@@ -1,4 +1,5 @@
 import React from 'react';
+import "../style/style.css";
 export default class Calculator extends React.Component{
     constructor(props){
         super(props);
@@ -79,7 +80,7 @@ export default class Calculator extends React.Component{
             <div>
                 <h1 >MY CALCULATOR</h1>
                 <br />
-                <input
+                <input className="input"
                     placeholder="enter a number"
                     value={this.state.num1}
                     onChange={this.handleNum1}
@@ -87,42 +88,43 @@ export default class Calculator extends React.Component{
 
                 <br /> 
 
-                <input
+                <input className="input"
                     placeholder="enter a number"
                     value={this.state.num2}
                     onChange={this.handleNum2}
                 /> 
                 <br />
 
-                <button onClick={this.handleSum}>
+                <button className="btn" onClick={this.handleSum}>
                     ADD
                 </button> 
                 <br /> 
-                <button onClick={this.handleSub}>
+                <button className="btn" onClick={this.handleSub}>
                     SUBSTRACT
                 </button> 
                 <br />
 
-                <button onClick={this.handleMul}>
+                <button className="btn" onClick={this.handleMul}>
                     MULTIPLY
                 </button> 
                 <br />
 
-                <button onClick={this.handleDiv}>
+                <button className="btn" onClick={this.handleDiv}>
                     DIVIDE
                 </button> 
                 <br />
 
                 
-                <button onClick={this.handleClc}>
+                <button className="btn" onClick={this.handleClc}>
                     CLEAR
                 </button> 
                 <br />
-
+                <span>
                 SUMMATION={this.state.sum} <br /> 
                 SUBSTRACTION={this.state.sub}<br />
                 MULTIPLICATION={this.state.mult}<br />
-                DIVISION={this.state.div}<br />            
+                DIVISION={this.state.div}<br />  
+                </span>          
             </div>
         )
     }
