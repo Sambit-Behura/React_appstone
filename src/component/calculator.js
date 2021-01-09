@@ -119,12 +119,25 @@ export default class Calculator extends React.Component{
                     CLEAR
                 </button> 
                 <br />
-                <span>
-                SUMMATION={this.state.sum} <br /> 
-                SUBSTRACTION={this.state.sub}<br />
-                MULTIPLICATION={this.state.mult}<br />
-                DIVISION={this.state.div}<br />  
-                </span>          
+                <center>
+                    <table border="3">
+                        <tr>
+                            <th>SUMMATION</th>   
+                            <th>SUBSTRACTION</th> 
+                            <th>MULTIPLICATION</th>
+                            <th>DIVISION</th>
+                        </ tr>
+                        <tr>
+                            <td>{this.state.sum}</td>
+                            <td>{this.state.sub}</td>
+                            <td>{this.state.mult}</td>
+                            <td>{this.state.div}</td>
+
+                        </tr>
+                    </table > 
+                </center> 
+                
+                        
             </div>
         )
     }

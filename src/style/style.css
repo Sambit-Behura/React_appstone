@@ -1,34 +1,31 @@
 div{
-    background-image: linear-gradient(to right, rgb(30, 255, 0), rgb(255, 0, 0));
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 238, 0));
     text-align: center;
     display: flexbox;
 }
 h1{
     text-align: center;
     width: 230px;
-    display: flexbox;
+    display:inline-block;
     height: 100px;
     background-color: red;
     position: relative;
-    animation-name: example;
-    animation-duration: 4s;
+    animation: mymove 5s infinite;
     animation-iteration-count: infinite;
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+@keyframes mymove {
+    from {left:0px;}
+    to {left: 200px;}
   }
 button{
-    font-family: verdana;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 20px;
+    width:9em;
     background-color:#8080ff;
     display: flexbox;
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -51,13 +48,7 @@ button{
     
 }
 
-span{
-    color:black;
-    display:flexbox;
-    font-weight: bold;
-    
 
-}
 
 .input{
     border: 2px solid red;
@@ -66,4 +57,9 @@ span{
     height: 10px;
     width: 600px;
 
+}
+center{
+    color: #000;
+    font-size: large;
+    margin: 30 30 30 30;
 }

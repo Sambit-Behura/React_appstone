@@ -8,6 +8,7 @@ import Test from './component/test';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Calculator from './component/calculator';
+import Comp1 from './component/comp1'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Sub />
     <Mult /> */}
     {/* <Arrays />  */}
+    {/* <Comp1 /> */}
     <Calculator />
 
   </React.StrictMode>,
