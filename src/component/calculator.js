@@ -88,7 +88,7 @@ export default class Calculator extends React.Component{
 
                 <br /> 
 
-                <input className="input"
+                <input className="input2"
                     placeholder="enter a number"
                     value={this.state.num2}
                     onChange={this.handleNum2}

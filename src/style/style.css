@@ -55,16 +55,23 @@ button{
 
 
 .input{
-    border: 2px solid red;
+    border: 2px solid azure;
     border-radius: 12px;
     padding: 25px 25px 25px 25px;
     height: 10px;
     margin-bottom: 10px;
     width: 600px;
-
+}
+.input2{
+    border: 2px solid azure;
+    border-radius: 12px;
+    padding: 25px 25px 25px 25px;
+    height: 10px;
+    margin-bottom: 30px;
+    width: 600px;
 }
 center{
     color: #000;
     font-size: large;
-    margin-top: 50px;
+    margin-top: 30px;
 }
