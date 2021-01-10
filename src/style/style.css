@@ -1,14 +1,15 @@
 div{
-    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 238, 0));
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(37, 35, 35));
     text-align: center;
     display: flexbox;
 }
 h1{
     text-align: center;
     width: 230px;
-    display:inline-block;
+    border-radius: 15px;
+    display:flex;
     height: 100px;
-    background-color: red;
+    background-color: whitesmoke;
     position: relative;
     animation: mymove 5s infinite;
     animation-iteration-count: infinite;
@@ -19,15 +20,18 @@ h1{
 }
 @keyframes mymove {
     from {left:0px;}
-    to {left: 200px;}
+    to {left: 550px;}
   }
 button{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 20px;
     width:9em;
-    background-color:#8080ff;
-    display: flexbox;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:whitesmoke;
+    display: inline-flexbox;
+    border-radius: 15px;
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -42,7 +46,7 @@ button{
     font-size:2em;
     border-radius:4px;
     border:1px solid #bbb;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
 
     
     
@@ -55,11 +59,12 @@ button{
     border-radius: 12px;
     padding: 25px 25px 25px 25px;
     height: 10px;
+    margin-bottom: 10px;
     width: 600px;
 
 }
 center{
     color: #000;
     font-size: large;
-    margin: 30 30 30 30;
+    margin-top: 50px;
 }

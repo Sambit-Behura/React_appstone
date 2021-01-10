@@ -96,29 +96,22 @@ export default class Calculator extends React.Component{
                 <br />
 
                 <button className="btn" onClick={this.handleSum}>
-                    ADD
-                </button> 
-                <br /> 
+                    +
+                </button> <br /> 
                 <button className="btn" onClick={this.handleSub}>
-                    SUBSTRACT
-                </button> 
-                <br />
+                    -
+                </button> <br />
 
                 <button className="btn" onClick={this.handleMul}>
-                    MULTIPLY
-                </button> 
-                <br />
+                    X
+                </button> <br />
 
                 <button className="btn" onClick={this.handleDiv}>
-                    DIVIDE
-                </button> 
-                <br />
-
-                
+                    /
+                </button> <br />
                 <button className="btn" onClick={this.handleClc}>
                     CLEAR
-                </button> 
-                <br />
+                </button><br /> 
                 <center>
                     <table border="3">
                         <tr>
