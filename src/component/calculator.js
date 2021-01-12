@@ -26,10 +26,11 @@ export default class Calculator extends React.Component{
         })
     }
 
-    handleSum = () =>{
+    handleSum = (e) =>{
         this.setState({
             sum: parseInt(this.state.num1) + parseInt(this.state.num2)
         })
+        alert(parseInt(this.state.num1) + parseInt(this.state.num2))
 
     }
 
@@ -38,6 +39,7 @@ export default class Calculator extends React.Component{
         this.setState({
             sub: parseInt(this.state.num1) - parseInt(this.state.num2)
         })
+        alert(parseInt(this.state.num1) - parseInt(this.state.num2))
 
     }
 
@@ -45,6 +47,7 @@ export default class Calculator extends React.Component{
         this.setState({
             mult: parseInt(this.state.num1) * parseInt(this.state.num2)
         })
+        alert(parseInt(this.state.num1) * parseInt(this.state.num2))
 
     }
 
@@ -52,6 +55,7 @@ export default class Calculator extends React.Component{
         this.setState({
             div: parseInt(this.state.num1) / parseInt(this.state.num2)
         })
+        alert(parseInt(this.state.num1) / parseInt(this.state.num2))
 
     }
 

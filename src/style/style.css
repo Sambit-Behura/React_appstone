@@ -2,12 +2,13 @@ div{
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(37, 35, 35));
     text-align: center;
     display: flexbox;
+    margin: 0;
 }
 h1{
     text-align: center;
     width: 230px;
     border-radius: 15px;
-    display:flex;
+    display:inline-flexbox;
     height: 100px;
     background-color: whitesmoke;
     position: relative;
@@ -74,4 +75,5 @@ center{
     color: #000;
     font-size: large;
     margin-top: 30px;
+    display: flexbox;
 }
