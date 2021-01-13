@@ -77,3 +77,7 @@ center{
     margin-top: 30px;
     display: flexbox;
 }
+ol{
+    display:flexbox;
+    text-align: center;
+}

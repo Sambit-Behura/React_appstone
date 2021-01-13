@@ -6,7 +6,8 @@ export default class Adder extends React.Component{
         this.state= {
             num1:'',
             num2:'',
-            sum:0 
+            sum:0,
+            average:0 
 
         }
     }
@@ -23,9 +24,13 @@ export default class Adder extends React.Component{
         })
     }
 
-    handleSum = () =>{
+    handleResult = () =>{
         this.setState({
-            sum: parseInt(this.state.num1) + parseInt(this.state.num2)
+            sum: parseInt(this.state.num1) + parseInt(this.state.num2),
+            average:(parseInt(this.state.num1) + parseInt(this.state.num2))/2,
+            num1:'',
+            num2:'',
+            
         })
 
     }
@@ -52,12 +57,13 @@ export default class Adder extends React.Component{
                 /> 
                 <br />
 
-                <button onClick={this.handleSum}>
-                    ADD
+                <button onClick={this.handleResult}>
+                    RESULT
                 </button> 
                 <br /> 
 
-                SUM={this.state.sum}             
+                SUM={this.state.sum}<br />   
+                AVERAGE={this.state.average}         
             </div>
         )
     }
