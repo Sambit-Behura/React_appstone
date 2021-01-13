@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React_appstone/static/css/main.70b9a634.chunk.css",
+    "main.js": "/React_appstone/static/js/main.27faed45.chunk.js",
+    "main.js.map": "/React_appstone/static/js/main.27faed45.chunk.js.map",
+    "runtime-main.js": "/React_appstone/static/js/runtime-main.d471d333.js",
+    "runtime-main.js.map": "/React_appstone/static/js/runtime-main.d471d333.js.map",
+    "static/js/2.5e0191d4.chunk.js": "/React_appstone/static/js/2.5e0191d4.chunk.js",
+    "static/js/2.5e0191d4.chunk.js.map": "/React_appstone/static/js/2.5e0191d4.chunk.js.map",
+    "static/js/3.eff00134.chunk.js": "/React_appstone/static/js/3.eff00134.chunk.js",
+    "static/js/3.eff00134.chunk.js.map": "/React_appstone/static/js/3.eff00134.chunk.js.map",
+    "index.html": "/React_appstone/index.html",
+    "static/css/main.70b9a634.chunk.css.map": "/React_appstone/static/css/main.70b9a634.chunk.css.map",
+    "static/js/2.5e0191d4.chunk.js.LICENSE.txt": "/React_appstone/static/js/2.5e0191d4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d471d333.js",
+    "static/js/2.5e0191d4.chunk.js",
+    "static/css/main.70b9a634.chunk.css",
+    "static/js/main.27faed45.chunk.js"
+  ]
+}
