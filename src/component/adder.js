@@ -1,69 +1,74 @@
 import React from 'react';
-export default class Adder extends React.Component{
-    constructor(props){
+export default class Adder extends React.Component {
+    constructor(props) {
         super(props);
 
-        this.state= {
-            num1:'',
-            num2:'',
-            sum:0,
-            average:0 
+        this.state = {
+            num1: '',
+            num2: '',
+            sum: 0,
+            average: 0
 
         }
     }
-    
+
     handleNum1 = (e) => {
         this.setState({
-            num1:e.target.value
+            num1: e.target.value
         })
     }
 
     handleNum2 = (e) => {
         this.setState({
-            num2:e.target.value
+            num2: e.target.value
         })
     }
 
-    handleResult = () =>{
+    handleResult = () => {
         this.setState({
-            sum: parseInt(this.state.num1) + parseInt(this.state.num2),
-            average:(parseInt(this.state.num1) + parseInt(this.state.num2))/2,
-            num1:'',
-            num2:'',
-            
-        })
+            sum: parseInt(this.state.num1) + parseInt(this.state.num2)
+        },
+            () => {
+                this.setState({
+                    average: (parseInt(this.state.num1) + parseInt(this.state.num2)) / 2,
+                    num1: '',
+                    num2: ''
+                })
+
+            }
+        )
 
     }
-    
-    
-    
-    
-    render(){
-        return(
+
+
+
+
+    render() {
+        return (
             <div>
                 <br />
                 <input
                     placeholder="enter a number"
                     value={this.state.num1}
                     onChange={this.handleNum1}
-                /> 
+                />
 
-                <br /> 
+                <br />
 
                 <input
                     placeholder="enter a number"
                     value={this.state.num2}
                     onChange={this.handleNum2}
-                /> 
+                />
                 <br />
 
                 <button onClick={this.handleResult}>
                     RESULT
-                </button> 
-                <br /> 
+                </button>
+                <br />
 
-                SUM={this.state.sum}<br />   
-                AVERAGE={this.state.average}         
+                SUM={this.state.sum}<br />
+                AVERAGE={this.state.average}
             </div>
         )
     }
