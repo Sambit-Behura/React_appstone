@@ -4,6 +4,7 @@ export default class Styling extends React.Component{
         super(props);
 
         this.state={
+            loggedIn: false
 
         }
     }
@@ -11,9 +12,10 @@ export default class Styling extends React.Component{
     render(){
         return(
             <div>
-                <div>
-                   <h1>NextStacks</h1>
-                </div>
+                {this.state.loggedIn === true?"You are Logged in":"You are Logged out"}
+                <br/>
+                {this.state.loggedIn === true && "you are Logged in"}
+
             </div>
         )
     }

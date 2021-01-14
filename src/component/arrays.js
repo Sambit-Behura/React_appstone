@@ -84,7 +84,7 @@ export default class Arrays extends React.Component {
 
                 <input placeholder="Enter The name" value={this.state.name} onChange={this.handleInput1} />
                 <input placeholder="Enter the Domain" value={this.state.Domain} onChange={this.handleInput2} />
-                <button onClick={this.handlePush}>
+                <button disabled={this.state.name === ""?true:false} onClick={this.handlePush}>
                     PUSH
                 </button>
                 <button onClick={this.handlePop}>
