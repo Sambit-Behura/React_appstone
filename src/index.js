@@ -1,23 +1,18 @@
 import React from 'react';
-import Arrays from './component/arrays'
-import Adder from './component/adder'
-import Class1 from './component/class1';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Calculator from './component/calculator';
-import Styling from './component/styling';
-import Arrays_Project from './component/arraysProject';
-import CalculatorComp from './component/calculatorComp';
+import MobileRes from './component/mobileRes';
+import Fetcher from "./component/fetcher";
 
 
 ReactDOM.render(
+  
   <React.StrictMode>
-    {/* <Class1/> */}
-    <Styling />
-    <Adder/>
-    <Arrays /> 
-    <Arrays_Project />
-    <CalculatorComp />
+    <Fetcher/>
+ 
+    {/* <MobileRes/> */}
+
+    
 
   </React.StrictMode>,
   document.getElementById('root')

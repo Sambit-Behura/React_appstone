@@ -3,6 +3,7 @@ export default class Arrays extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            name:"",
             arr: [
                 {
                     name: " Sambit ",
@@ -64,6 +65,24 @@ export default class Arrays extends React.Component {
         })
 
     }
+    handleEnter = (e) => {
+        var code = e.keyCode || e.which;
+        var temp = this.state.arr;
+        if (code === 13) {
+            temp.push({
+                name: this.state.name,
+                Domain: this.state.Domain
+            })
+            this.setState({
+                arr: temp,
+                name: "",
+                Domain: ""
+            })
+            
+
+        }
+
+    }
 
 
 
@@ -82,8 +101,8 @@ export default class Arrays extends React.Component {
                     )
                 })}
 
-                <input placeholder="Enter The name" value={this.state.name} onChange={this.handleInput1} />
-                <input placeholder="Enter the Domain" value={this.state.Domain} onChange={this.handleInput2} />
+                <input placeholder="Enter The name" value={this.state.name} onChange={this.handleInput1}  />
+                <input placeholder="Enter the Domain" value={this.state.Domain} onChange={this.handleInput2} onKeyPress={this.handleEnter} />
                 <button disabled={this.state.name === ""?true:false} onClick={this.handlePush}>
                     PUSH
                 </button>

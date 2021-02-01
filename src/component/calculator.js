@@ -1,5 +1,5 @@
 import React from 'react';
-import "../style/style.css";
+// import "../style/style.css";
 export default class Calculator extends React.Component{
     constructor(props){
         super(props);
@@ -29,8 +29,8 @@ export default class Calculator extends React.Component{
     handleSum = (e) =>{
         this.setState({
             sum: parseInt(this.props.num1) + parseInt(this.props.num2),
-            num1:'',
-            num2:''
+            num1:this.props.num1,
+            num2:this.props.num2
         })
         alert(parseInt(this.props.num1) + parseInt(this.props.num2))
 
@@ -64,6 +64,16 @@ export default class Calculator extends React.Component{
             num2:'',
         })
         alert(parseInt(this.props.num1) / parseInt(this.props.num2))
+
+    }
+    handleReset = () =>{
+        this.setState({
+            sum:0,
+            div:0,
+            sub:0,
+            mult:0 
+            
+        })
 
     }
 
@@ -109,6 +119,10 @@ export default class Calculator extends React.Component{
                 <button className="btn" onClick={this.handleDiv}>
                     /
                 </button> <br />
+
+                <button className="btn" onClick={this.handleReset}>
+                    RESET
+                </button><br />
                 
                 <center>
                     <table border="3">

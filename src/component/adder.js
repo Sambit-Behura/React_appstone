@@ -39,6 +39,26 @@ export default class Adder extends React.Component {
         )
 
     }
+    handleClc = () =>{
+        this.setState({
+            num1: '',
+            num2: '',
+            sum: 0,
+            average: 0
+            
+        })
+
+    }
+    handleEnter = (e) => {
+        var code = e.keyCode || e.which;
+        if (code === 13) {
+            this.handleResult()
+
+        }
+
+    }
+
+
 
 
 
@@ -59,12 +79,19 @@ export default class Adder extends React.Component {
                     placeholder="enter a number"
                     value={this.state.num2}
                     onChange={this.handleNum2}
+                    onKeyPress={this.handleEnter}
+
                 />
                 <br />
 
                 <button onClick={this.handleResult}>
                     RESULT
                 </button>
+
+                <button  onClick={this.handleClc}>
+                    CLEAR
+                </button><br /> 
+
                 <br />
 
                 SUM={this.state.sum}<br />
