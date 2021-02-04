@@ -6,7 +6,6 @@ import ColorLensIcon from '@material-ui/icons/ColorLens';
 import BrushIcon from '@material-ui/icons/Brush';
 import green from '@material-ui/core/colors/green';
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import Icon from '@material-ui/core/Icon';
 import { dark, light } from "@material-ui/core/styles/createPalette";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import BrightnessHighIcon from "@material-ui/icons/BrightnessHigh";
@@ -105,7 +104,7 @@ export default class Fetcher extends React.Component {
 
 
                 <Paper elevation={3} style={{
-                    margin: 0, alignItems: 'center', backgroundSize: "cover",
+                    margin: 0, alignItems: 'center',display:'flexbox', backgroundSize: "cover",
                     height: "100vh",
                 }}>
                        <Button onClick={this.toggleTheme}>

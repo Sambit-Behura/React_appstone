@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import MobileRes from './component/mobileRes';
-import Fetcher from "./component/fetcher";
+import PostApi from "./component/postApi"
 
 
 ReactDOM.render(
   
   <React.StrictMode>
-    <Fetcher/>
- 
-    {/* <MobileRes/> */}
-
-    
+    <PostApi /> 
 
   </React.StrictMode>,
   document.getElementById('root')
